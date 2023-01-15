@@ -61,6 +61,11 @@ mod test {
 
         assert_eq!(list.pop(), Some(two));
         assert_eq!(list.pop(), Some(one));
-        assert_eq!(list.pop(), None);
+    }
+    #[test]
+    #[should_panic]
+    fn fails() {
+        let mut list = List::new();
+        assert_eq!(list.pop(), Some(2));
     }
 }
