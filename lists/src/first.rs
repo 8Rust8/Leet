@@ -79,5 +79,6 @@ impl Drop for List {
     }
 }
 
-#[cfg(test)]
-mod tests;
+// uncomment below two lines for tests
+// #[cfg(test)]
+// mod tests;

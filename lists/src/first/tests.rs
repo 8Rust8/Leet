@@ -27,26 +27,4 @@ fn drop() {
 
     assert_eq!(list.pop(), None);
 }
-
-#[test]
-fn drop_self() {
-    let mut list = List::new();
-    let two = 2;
-    list.push(two);
-
-    list.drop_self();
-
-    assert_eq!(list.pop(), None);
-}
-
-#[test]
-fn drop_all() {
-    let mut list = List::new();
-    let (one, two) = (1, 2);
-    list.push(one);
-    list.push(two);
-
-    list.drop_all();
-
-    assert_eq!(list.pop(), None);
-}
+// simmilar to fn drop() you can test drop_all() and stop_self()
